@@ -1,0 +1,191 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* MY CSS */
+
+body {
+    background-image: url("/img/pizza_oven.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 80%);
+    height: 20vh;
+    color: white;
+    font-family: "Monsieur La Doulaise", cursive;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header h1 {
+    margin-top: 32px;
+    font-size: 64px;
+}
+
+.header nav {
+    display: flex;
+}
+
+.header button {
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 100px;
+    height: 36px;
+}
+
+.header button:hover{
+    border-bottom: 2px solid rgb(120, 87, 74);
+}
+
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#content .square,
+.square-about {
+    background-color: rgba(0, 0, 0, 80%);
+    color: white;
+    height: 65vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+}
+
+.square p {
+    margin: 8px;
+}
+
+.square .img_chef {
+    height: 70%;
+    width: 30%;
+    background-image: url(/img/chef-chef.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    margin: 24px;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 80%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+}
+
+.footer p {
+    color: white
+}
+
+.menu-item {
+    border: 16px solid transparent;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 16px;
+}
+
+.menu-item:hover {
+    color: rgb(217, 141, 19);
+}
+
+.square-menu {
+    background-color: rgba(0, 0, 0, 80%);
+    color: white;
+    height: 65vh;
+    width: 80%;
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.menu-item h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.square-about h2 {
+    font-size: 32px;
+}
+
+.square-about p {
+    width: 500px;
+}
+
+.square-about h4 {
+    margin-top: 400px;
+}
+
+.square-about .aMessage {
+    font-size: 8px;
+}
